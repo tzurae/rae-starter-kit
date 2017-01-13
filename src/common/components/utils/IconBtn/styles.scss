@@ -1,0 +1,16 @@
+@import '../../../styles/index';
+
+.btn {
+  @include fontSize(15);
+  @include no-focus;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  color: $white;
+  border: 0;
+  background-color: transparent;
+}
+
+.icon {
+  background-color: transparent;
+}

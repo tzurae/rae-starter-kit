@@ -1,0 +1,105 @@
+@import '../../styles/index';
+
+.jumbotron {
+  @include flex-col-center;
+  @include bg-cover('homepage/river_dark.jpg');
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin-bottom: 0 !important; // react-boostrap default :50px
+}
+
+.company-name {
+  @include fontSizeI(60);
+  padding-top: 35vh;
+  color: $white;
+}
+
+.company-slogan {
+  @include fontSize(20);
+  padding-bottom: 40px;
+  color: $white;
+}
+
+.produce-trip {
+  padding-top: 13px;
+  color: $white;
+}
+
+.produce-trip-button {
+  padding: 1px 40px;
+  border: none;
+  border-radius: 300px;
+  background-color: #ff7744;
+}
+
+.product-feature {
+  height: 45vh;
+  background-color: #fffaf0;
+}
+
+.product-feature-headline {
+  @include flex-col-center;
+  justify-content: flex-start;
+  padding-top: 5vh;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.feature {
+  @include flex-col-center;
+  justify-content: flex-start;
+  width: 20vw;
+}
+
+.feature-headline {
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.feature-intro {
+  width: 175px;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.hr {
+  display: block;
+  width: 2%;
+  border-width: 3px;
+  border-color: #ff7744;
+}
+
+.img {
+  width: 30%;
+  padding-bottom: 1vh;
+}
+
+.user-reviews {
+  @include bg-cover('homepage/night.jpg');
+  min-height: 70vh;
+  background-size: 100%;
+}
+
+.user-reviews-headline {
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+}
+
+.post {
+  padding: 5px;
+}

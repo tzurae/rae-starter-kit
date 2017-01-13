@@ -1,0 +1,25 @@
+@import '../../../styles/index';
+
+.nav {
+  border-width: 0;
+  background-color: $color-navbar;
+}
+
+.text {
+  @include font-size-medium;
+  color: $white;
+}
+
+.header {
+  margin-left: 25px;
+}
+
+.dropdown-text {
+  @extend .text;
+  display: inline;
+}
+
+.avatar {
+  @include bg-contain('default-avatar.png', 22px, 22px);
+  display: inline-block;
+}

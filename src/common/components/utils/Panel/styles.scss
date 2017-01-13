@@ -1,0 +1,80 @@
+@import '../../../styles/index';
+
+.underline {
+  width: 90%;
+  height: 2px;
+  margin: 0 auto;
+}
+
+.container {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: $color-panel-background;
+}
+
+.title {
+  @include font-size-big;
+  padding: 20px 30px;
+  color: $color-main;
+  text-align: center;
+}
+
+.content-div {
+  padding: 20px 15px;
+}
+
+.comment {
+  @include fontSize(15);
+  color: $black;
+}
+
+/* Panel1 */
+
+.underline1 {
+  height: 3px;
+  background-color: $color-main;
+}
+
+.title1 {
+  text-align: left;
+}
+
+.content-div1 {
+  padding: 20px 30px;
+}
+
+/* Panel2 */
+
+.underline2 {
+  background-color: $color-border;
+}
+
+/* PanelWithWord */
+
+.panel-with-word {
+  padding: 20px 30px;
+}
+
+.underline-with-word {
+  display: none;
+}
+
+.title-with-word {
+  @include fontSize(22);
+  padding: 20px 20px 15px;
+  color: $black;
+  text-align: center;
+}
+
+.content-div-with-word {
+  margin: 20px 0;
+}
+
+.comment-with-word {
+  width: 75%;
+  margin: 0 auto;
+  line-height: 22px;
+  color: $black;
+  text-align: center;
+  letter-spacing: 1px;
+}

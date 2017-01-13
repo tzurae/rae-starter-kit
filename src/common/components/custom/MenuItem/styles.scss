@@ -1,0 +1,103 @@
+@import '../../../styles/index';
+
+.btn {
+  @include hover-normal;
+  width: 100%;
+  height: 90px;
+  margin: 10px 0;
+  padding: 0;
+  text-align: left;
+  border: 0;
+  background-color: $white;
+  box-shadow: 3px 3px 8px 0 $silver;
+}
+
+.container {
+  @include flex-row;
+  height: 100%;
+}
+
+.info-div {
+  @include flex-col;
+  flex: 1;
+  height: 100%;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+}
+
+.title {
+  @include fontSize(18);
+  @include flex-row-center;
+  flex: 1;
+  color: $black;
+}
+
+.guide-info {
+  @include flex-row-center;
+  flex: 1;
+  color: $black;
+}
+
+.guide-name {
+  @include font-size-medium;
+  margin-left: 15px;
+}
+
+.avatar {
+  @include bg-contain('default-avatar.png', 32px, 32px);
+  border-radius: 16px;
+}
+
+.day-info {
+  @include font-size-small;
+  margin-left: 15px;
+  padding: 2px;
+  border: 1px solid grey;
+}
+
+.phase-div {
+  position: relative;
+  width: 110px;
+  height: 100%;
+}
+
+.phase {
+  @include fontSize(14);
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 100%;
+  padding: 8px;
+  color: $gallery;
+  letter-spacing: 2px;
+}
+
+.phase-guide-confirm {
+  @extend .phase;
+  background-color: $color-phase-guide-confirm;
+}
+
+.phase-deposit {
+  @extend .phase;
+  background-color: $color-phase-deposit;
+}
+
+.phase-time-confirm {
+  @extend .phase;
+  background-color: $color-phase-time-confirm;
+}
+
+.phase-video-wait {
+  @extend .phase;
+  background-color: $color-phase-video-wait;
+}
+
+.phase-balance {
+  @extend .phase;
+  background-color: $color-phase-balance;
+}
+
+.phase-buy {
+  @extend .phase;
+  background-color: $color-phase-buy;
+}
