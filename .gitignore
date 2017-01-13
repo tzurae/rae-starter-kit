@@ -1,56 +1,42 @@
-# custom redux-logger settings
-logger.js
+# OSX
+#
+.DS_Store
 
-# Dependency directory
-node_modules
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
 
-# Secret
-*.pub
-*.pem
-*.ppk
-# configs/**/credential.*
-!configs/**/credential.tmpl.*
-
-# Log
-*.log
-
-# Generated files
-/build
-/.deploy
-/src/public/tmp
-/src/public/users
-/src/native/styles/index.js
-my-release-key.keystore
-
-# webpack-isomorphic-tools
-webpack-stats.json
-webpack-assets.json
-
-# Android/IJ
-*.iml
+# Android/IntelliJ
+#
+build/
 .idea
-*.gradle
+.gradle
 local.properties
-/android/build
-/android/app/build
+*.iml
 
-# iOS
-/ios/build
+# node.js
+#
+node_modules/
+npm-debug.log
 
 # BUCK
 buck-out/
 \.buckd/
-/android/app/libs
-/android/keystores/debug.keystore
-
-# Others
-.DS_Store
-
-# yarn
-yarn.lock
-
-# VSCode
-.vscode/
-
-# Port
-/src/server/utils/getPort.js
+android/app/libs
+*.keystore
